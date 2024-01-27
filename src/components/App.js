@@ -4,14 +4,8 @@ const App = () => {
   const [shapes, setShapes] = useState([]);
   const [shape, setShape] = useState("square");
   const handleShapes = () => {
-    if (shape === "square") {
-      const newShape = [...shapes, shape];
-      setShapes(newShape);
-    }
-    if (shape === "circle") {
-      const newShape = [...shapes, shape];
-      setShapes(newShape);
-    }
+    const newShape = [...shapes, shape];
+    setShapes(newShape);
   };
   return (
     <div id="main">
